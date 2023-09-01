@@ -26,7 +26,12 @@
   text-decoration: none;
 }
 
-.icon {
+.icon,
+.iconTransformed {
   width: space.$s6;
   margin-right: space.$s3;
+}
+
+.iconTransformed {
+  transform: rotate(180deg);
 }
