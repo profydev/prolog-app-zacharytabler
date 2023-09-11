@@ -18,3 +18,13 @@ export type Project = {
   numEvents24h: number;
   status: ProjectStatus;
 };
+
+export function updateStatus(newStatus: string) {
+  if (newStatus === "info") {
+    return "stable";
+  } else if (newStatus === "warning") {
+    return "warning";
+  } else {
+    return "critical";
+  }
+}
